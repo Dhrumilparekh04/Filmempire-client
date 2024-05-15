@@ -71,7 +71,7 @@ const FavoriteList = () => {
     };
 
     getFavorites();
-  }, [], [dispatch]);
+  }, [dispatch]);
 
   const onLoadMore = () => {
     setFilteredMedias([...filteredMedias, ...[...medias].splice(page * skip, skip)]);
